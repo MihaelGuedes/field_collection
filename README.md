@@ -62,4 +62,4 @@ $ rails s
 
 ----------------------------------------------------------------------------------
 
-Feito com 💙 por Mihael Guedes 👋 [Acesse meu linkedin](https://www.linkedin.com/in/lucasleonardobs/)
+Feito com 💙 por Mihael Guedes 👋 [Acesse meu linkedin](https://www.linkedin.com/in/mihael-guedes-9470b11ba/)
