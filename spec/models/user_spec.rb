@@ -7,7 +7,6 @@ RSpec.describe User, type: :model do
     expect(user).to be_valid
   end
 
-  # Email validates
   context 'validates emails' do
     it 'not valid without email' do
       user = User.new(email: nil, password: '123456', cpf: '70904357414')
@@ -24,8 +23,13 @@ RSpec.describe User, type: :model do
     end
   end
 
-  # Password validates
   context 'validate password' do
+    it 'valid password' do
+      user = User.new(email: 'email@example.com', password: '123456', cpf: '70904357414')
+      user.valid?
+      expect(user).to be_valid
+    end
+    
     it 'not valid password length' do
       user = User.new(email: 'email@example.com', password: '12345', cpf: '70904357414')
       user.valid?
@@ -33,7 +37,6 @@ RSpec.describe User, type: :model do
     end
   end
 
-  # CPF validates
   context 'validates CPF' do
     it 'validate unique cpf' do
       user = User.new(email: 'email@example.com', password: '123456', cpf: '70904357414')

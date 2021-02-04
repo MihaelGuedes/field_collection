@@ -1,15 +1,19 @@
 require 'rails_helper'
 
-# class Hash
-#     def json(parts)
-#       ary = parts.split('>')
-#       ary.reduce(self) do |memo, key|
-#         memo.fetch(key.to_s.strip) if memo
-#       end
-#     end
-# end
-
 describe VisitsController, type: :controller do
+
+  context 'validate date' do
+    it 'valid presence' do
+      visit = Visit.new(date: '30/12/2021', user_id: 1)
+      expect(visit).to be_valid
+    end
+  
+    it 'not valid without date' do
+      visit = Visit.new(date: nil, user_id: 1)
+      visit.valid?
+      expect(visit.errors[:date]).to include('não pode ficar em branco')
+    end
+  end
 
   context 'GET checkin_at' do
     it 'valid' do
