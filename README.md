@@ -29,6 +29,7 @@ Technologies that I used to develop this api
 - [Rails](https://rubyonrails.org/)
 - [JWT-token](https://jwt.io/)
 - [Sqlite3](https://www.sqlite.org/index.html)
+- [Postman](https://www.postman.com/)
 
 
 ## 💻 Getting started
@@ -39,6 +40,7 @@ Technologies that I used to develop this api
 - [Yarn](https://classic.yarnpkg.com/) or [npm](https://www.npmjs.com/)
 - [Bundler](https://bundler.io/)
 - [Rails](https://rubyonrails.org/)
+- [Postman](https://www.postman.com/)
 
 **Clone the project and access the folder**
 
